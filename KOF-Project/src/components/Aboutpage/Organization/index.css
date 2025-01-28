@@ -1,0 +1,90 @@
+#organization-wrapper {
+  padding: 20px 80px;
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.about-us {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.line {
+  background-color: #1d2130;
+  width: 72px;
+  height: 2px;
+}
+.about {
+  color: #1d2130;
+  font-weight: 700;
+  font-size: 16px;
+}
+.organization-text {
+  display: flex;
+  gap: 20px;
+  /* justify-content: space-between; */
+}
+.organization-text h1 {
+  margin: 0;
+  color: #1d2130;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 65.63px;
+  flex: 1;
+}
+.dedication {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.dedication h3 {
+  margin: 0;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  color: #1d2130;
+}
+.dedication p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 25.6px;
+  color: #1d2130;
+}
+
+@media (max-width: 768px) {
+  #organization-wrapper {
+    padding: 10px;
+    gap: 20px;
+  }
+  .line {
+    width: 60px;
+  }
+  .about {
+    font-size: 12px;
+  }
+  .organization-text {
+    flex-direction: column;
+  }
+  .organization-text h1 {
+    flex: unset;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+  }
+  .dedication {
+    flex: unset;
+    gap: 10px;
+  }
+  .dedication h3 {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .dedication p {
+    font-size: 12px;
+    line-height: 20px;
+    text-align: center;
+  }
+}

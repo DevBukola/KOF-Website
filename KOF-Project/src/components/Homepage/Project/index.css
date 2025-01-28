@@ -1,0 +1,12 @@
+ .project-images img {
+    width: 450px;
+    height: 470px;
+    border-radius: 10px;
+ }
+
+ @media (max-width: 768px) {
+    .project-images img {
+        width: 50vw;
+        height: auto;
+    }
+ }

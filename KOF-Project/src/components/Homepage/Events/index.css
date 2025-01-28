@@ -1,0 +1,113 @@
+.events-wrapper h1 {
+  font-size: 40px;
+  color: #1d2130;
+  font-weight: 500;
+}
+
+.events {
+  display: flex;
+  gap: 20px;
+}
+
+.operation {
+  display: flex;
+  background-color: #31589d;
+  justify-content: space-between;
+  padding: 20px;
+  color: #ffffff;
+  flex: 1;
+  border-radius: 20px;
+}
+
+.operation-date {
+  display: flex;
+  gap: 30px;
+}
+
+.dates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.date {
+  margin: 0;
+  opacity: 65%;
+  font-size: 48px;
+}
+.month {
+  margin: 0;
+  font-size: 16px;
+}
+
+.operation-text {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.operation-text p {
+  font-size: 28px;
+  font-weight: 700;
+  opacity: 85%;
+}
+
+.past {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.past h2 {
+  margin: 0;
+  font-size: 16px;
+  opacity: 65%;
+}
+
+.line {
+  width: 44px;
+  height: 2px;
+  background: white;
+  opacity: 65%;
+}
+
+.arrow {
+  background: #fff;
+  color: black;
+  border-radius: 50%;
+  padding: 5px;
+  font-size: 30px;
+}
+
+@media (max-width: 768px) {
+  .events-wrapper h1 {
+    font-size: 20px;
+  }
+
+  .events {
+   flex-direction: column;
+  }
+  .operation {
+    width: 100%;
+  }
+
+  .operation-date {
+    gap: 20px;
+  }
+
+  .date {
+    font-size: 30px;
+  }
+  .month {
+    font-size: 14px;
+  }
+  .operation-text p {
+    font-size: 16px;
+  }
+  .past h2 {
+    font-size: 14px;
+  }
+  .line {
+    width: 34px;
+  }
+}

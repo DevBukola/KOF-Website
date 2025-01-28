@@ -1,0 +1,159 @@
+.volunteer-modal {
+  position: fixed;
+  padding: 30px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  max-height: 80vh;
+  overflow-y: auto;
+  z-index: 999;
+}
+
+.volunteer-text {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.volunteer-text h1,
+p {
+  margin: 0;
+}
+
+form {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-size: 12px;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+}
+
+.close-icon {
+  font-size: 32px;
+  color: #fff;
+  background: black;
+  border-radius: 5px;
+}
+
+.name-wrapper {
+  display: flex;
+  width: 100%;
+  gap: 20px;
+}
+
+.name-wrapper div {
+  flex: 1;
+}
+
+.name,
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.underline-input {
+  border: none;
+  border-bottom: 2px solid black;
+  outline: none;
+  font-size: 16px;
+  width: 100%;
+}
+
+.underline-input:focus {
+  border-bottom: 2px solid blue;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.message-input {
+  height: 100px;
+  outline: none;
+  padding: 10px;
+  border: 2px solid black;
+  resize: none;
+  border-radius: 5px;
+}
+
+.message-input:focus {
+  border: 2px solid blue;
+}
+
+.message-submit {
+  background-color: #1d2130;
+  padding: 16px 32px;
+  border-radius: 4px;
+  color: white;
+  width: 190px;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .volunteer-modal {
+    top: 10%;
+    width: 80%;
+    max-height: 90%;
+    overflow-y: auto;
+  }
+
+
+  .volunteer-text {
+    gap: 5px;
+  }
+
+  .volunteer-text h1 {
+    font-size: 14px;
+    margin-top: 30px;
+  }
+
+  .volunteer-text p {
+    font-size: 12px;
+  }
+
+  .close-icon {
+    font-size: 26px;
+  }
+
+  .name,
+  .email {
+    gap: 10px;
+  }
+
+  form {
+    margin-top: 20px;
+    gap: 20px;
+  }
+
+  form label {
+    font-size: 12px;
+  }
+
+  .message-submit {
+    font-size: 12px;
+    padding: 10px;
+  }
+}

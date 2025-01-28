@@ -1,0 +1,104 @@
+#team-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 20px;
+  padding: 50px;
+  color: #1d2130;
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: center;
+}
+.team h1 {
+  margin: 0;
+}
+.team p {
+    text-align: center;
+}
+.team-details {
+  display: flex;
+  justify-content: space-between;
+}
+.team-details h3 {
+  margin: 0;
+  text-align: center;
+}
+.team-details h5 {
+  margin: 0;
+  font-weight: 400;
+  text-align: center;
+}
+.team-details .socials {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  justify-content: center;
+}
+.socials a {
+  color: #1d2130;
+  width: 20px;
+}
+.detail {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+  gap: 10px;
+}
+.detail img {
+  width: 296px;
+  height: 320px;
+  border-radius: 20px;
+}
+.scroll-container {
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.scroll-container::-webkit-scrollbar {
+  height: 5px;
+}
+
+.scroll-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb {
+  background-color: #9394c2;
+  border-radius: 4px;
+}
+
+.scroll-container::-webkit-scrollbar-thumb:hover {
+  background-color: #2b1770;
+}
+
+@media (max-width: 768px) {
+  #team-wrapper {
+    padding: 10px;
+  }
+  .team h1 {
+    font-size: 14px;
+  }
+  .team p {
+    font-size: 12px;
+  }
+  .team-details {
+    gap: 10px;
+  }
+  .detail {
+    gap: 6px;
+  }
+  .detail img {
+    width: 60vw;
+    height: auto;
+  }
+  .team-details h3 {
+    font-size: 14px;
+  }
+  .team-details h5 {
+    font-size: 12px;
+  }
+}

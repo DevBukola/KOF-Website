@@ -1,0 +1,8 @@
+.e {
+    padding: 0 45px;
+}
+@media (max-width: 768px) {
+    .e {
+        padding: 0 10px;
+    }
+}
