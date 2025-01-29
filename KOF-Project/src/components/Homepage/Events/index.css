@@ -1,5 +1,5 @@
 .events-wrapper h1 {
-  font-size: 40px;
+  font-size: 25px;
   color: #1d2130;
   font-weight: 500;
 }
@@ -81,7 +81,7 @@
 
 @media (max-width: 768px) {
   .events-wrapper h1 {
-    font-size: 20px;
+    font-size: 18px;
   }
 
   .events {

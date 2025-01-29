@@ -11,9 +11,9 @@ function OurProgram() {
     <div id="program-wrapper">
       <Community />
       <div className="space-container">
-        <div className="about-us">
-          <div className="line"></div>
-          <div className="about">PROJECTS WE HAVE DONE</div>
+        <div className="about-us-space">
+          <div className="line-space"></div>
+          <p className="about-space">PROJECTS WE HAVE DONE</p>
         </div>
         <div>
           <h2 className="space">
@@ -21,8 +21,8 @@ function OurProgram() {
           </h2>
         </div>
       </div>
-      <div className="scroll-container">
-        <div className="cards">
+      <div className="scroll-container-program">
+        <div className="program-cards">
           {SafeSpace.map((space) => (
             <Space
               key={space.id}
@@ -33,9 +33,7 @@ function OurProgram() {
           ))}
         </div>
       </div>
-      <div>
         <Contribution />
-      </div>
       <div className="e">
         <Events />
       </div>

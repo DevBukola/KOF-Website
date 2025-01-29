@@ -1,3 +1,9 @@
+.responsibility-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
 .responsibility {
   display: flex;
   flex-direction: column;
@@ -6,6 +12,9 @@
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
+  min-height: 250px;
+  width: 330px;
+  flex-grow: 1;
 }
 
 .responsibility .icon {
@@ -28,9 +37,12 @@
 }
 
 @media (max-width: 768px) {
-    .responsibility {
-        height: auto;
-        width: 70vw;
-        padding: 10px;
-    }
+  .responsibility-wrapper {
+    flex-direction: column;
+    gap: 15px;
+  }
+  .responsibility {
+    min-height: 200px;
+    width: 70vw;
+  }
 }

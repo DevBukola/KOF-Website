@@ -49,10 +49,11 @@
 
 @media (max-width: 768px) {
   #community-wrapper {
-    padding: 10px;
+    padding: 0 15px;
+    gap: 5px;
   }
   .line {
-    width: 60px;
+    width: 30px;
   }
   .about {
     font-size: 12px;

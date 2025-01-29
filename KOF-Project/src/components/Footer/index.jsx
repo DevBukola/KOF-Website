@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 function Footer() {
   return (
     <div id="footer-container">
-          <div className="logo-image">
-              <img src="/logo.png" alt="" />
+      <div className="logo-image">
+        <img src="/logo2.png" alt="" />
       </div>
       <div className="lists">
         <div className="home">
@@ -60,14 +60,14 @@ function Footer() {
             <Link>LinkedIn</Link>
           </li>
         </div>
-          </div>
-          <div className="newsletter">
-              <h1>Subscribe to get the latest updates</h1>
-              <div className="subscription">
-                  <div className="email">Email</div>
-                  <button className="subscribe">Subscribe</button>
-              </div>
-          </div>
+      </div>
+      <div className="newsletter">
+        <h1>Subscribe to get the latest updates</h1>
+        <div className="subscription">
+          <div className="email">Email</div>
+          <button className="subscribe">Subscribe</button>
+        </div>
+      </div>
     </div>
   );
 }

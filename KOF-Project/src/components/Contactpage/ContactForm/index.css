@@ -1,0 +1,40 @@
+#contact-form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-name-wrapper,
+.contact-email-wrapper {
+  display: flex;
+  gap: 10px;
+}
+.contact-name,
+.contact-email {
+  flex: 1;
+}
+
+.contact-submit-div {
+    display: flex;
+    justify-content: center;
+}
+
+.contact-submit {
+  background: #9394c2;
+  padding: 16px 32px;
+  border-radius: 4px;
+  color: white;
+  width: 190px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+    #contact-form-wrapper {
+        padding: 15px;
+    }
+}

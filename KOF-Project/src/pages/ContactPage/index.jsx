@@ -1,10 +1,15 @@
-import React from 'react'
-import './index.css'
+import React from "react";
+import "./index.css";
+import Contact from "../../components/Contactpage/Contact";
+import ContactForm from "../../components/Contactpage/ContactForm";
 
 function ContactUs() {
   return (
-    <div>Contact us</div>
-  )
+    <div id="contact-container">
+      <Contact />
+      <ContactForm />
+    </div>
+  );
 }
 
-export default ContactUs
+export default ContactUs;
