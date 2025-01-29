@@ -3,7 +3,7 @@ import "./index.css";
 
 const Space = ({ img, id, header, paragraph }) => {
   return (
-    <div id="Space-wrapper">
+    <div id="space-wrapper">
       <div className="safespace-card">
         <div className="image">
           <img src={img} alt="" />

@@ -111,7 +111,7 @@ export const SafeSpace = [
     img: frame1,
     header: "Operation Feed the Orphan:",
     paragraph:
-      "Provision of food and essential materials as pandemic relief for the Hope orphanage home at Idofia, Kwara state.",
+      "Provision of food and essential materials as pandemic relief for the Hope Orphanage Home at Idofian, Kwara State.",
   },
   {
     id: 2,
@@ -125,6 +125,6 @@ export const SafeSpace = [
     img: children,
     header: "White Cane Day - 2021",
     paragraph:
-      "This project empower 30 visually Impaired students in Ilorin Kwara state Nigeria with Brailles support and training ",
+      "This project empowers 30 visually impaired students in Ilorin Kwara State, Nigeria with Brailles support and training.",
   },
 ];

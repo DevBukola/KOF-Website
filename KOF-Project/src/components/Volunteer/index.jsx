@@ -45,7 +45,7 @@ function Volunteer({ onClose }) {
             placeholder="Enter your email address"
           />
         </div>
-        <div className="message">
+        <div className="volunteer-message">
           <label for="message">Why do you wish to join as a volunteer?</label>
           <textarea
             id="message"

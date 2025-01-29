@@ -1,0 +1,118 @@
+#contact-wrapper {
+  padding: 30px 155px;
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+  background: #e9eaf3;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.message {
+  margin-left: 10%;
+}
+.message h1 {
+  margin: 0;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 67.2px;
+  color: #1d2130;
+}
+.message p {
+  opacity: 70%;
+  color: #1d2130;
+  line-height: 25.6px;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.reach-us {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+.reach-line {
+  background-color: #1d2130;
+  width: 72px;
+  height: 2px;
+}
+.reach {
+  color: #1d2130;
+  font-weight: 700;
+  font-size: 16px;
+}
+.address {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.address h3 {
+  font-size: 20px;
+  color: #1d2130;
+  line-height: 32px;
+  font-weight: 700;
+}
+.address p {
+  font-weight: 400;
+  color: #525560;
+  font-size: 16px;
+  line-height: 25.6px;
+}
+.address h3,
+h5 {
+  margin: 0;
+}
+.number,
+.location,
+.email {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.number h5 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 28px;
+  color: #1d2130;
+}
+.social-handles {
+  display: flex;
+  gap: 5px;
+}
+.social-handles a {
+  text-align: none;
+  width: 20px;
+  height: 20px;
+  color: black;
+}
+
+@media (max-width: 768px) {
+  #contact-wrapper {
+    padding: 15px;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .message {
+    margin-left: unset;
+  }
+  .message h1 {
+    font-size: 30px;
+    line-height: 35px;
+  }
+  .message p {
+    font-size: 14px;
+  }
+  .reach-line {
+    width: 40px;
+  }
+  .reach {
+    font-size: 12px;
+  }
+  .address {
+    gap: 20px;
+  }
+}

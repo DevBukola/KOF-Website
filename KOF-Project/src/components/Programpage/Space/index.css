@@ -29,8 +29,11 @@
 }
 
 @media (max-width: 768px) {
+    .safespace-card {
+        margin: unset;
+    }
     .about-us {
-        margin-top: 20px;
+        margin-top: unset;
     }
     .image {
         height: 300px;
