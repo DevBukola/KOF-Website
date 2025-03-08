@@ -11,6 +11,7 @@ import director from "../assets/Director.png";
 import programmanager from "../assets/PManager.png";
 import communitymanager from "../assets/CManager.png";
 import commofficer from "../assets/cofficer.png";
+import productDesigner from "/ProductDesigner.png";
 
 export const DifferenceCards = [
   {
@@ -18,7 +19,7 @@ export const DifferenceCards = [
     icon: education,
     header: "Education and Advocacy",
     label:
-      "We focus on raising awareness and building capacity through educational initiatives that promote social justice, inclusionand equal access.",
+      "We focus on raising awareness and building capacity through educational initiatives that promote social justice, inclusion and equal access.",
   },
   {
     id: 2,
@@ -97,6 +98,17 @@ export const teamMembers = [
     img: commofficer,
     teamName: "Temitope Bolaji Ajibola",
     post: "Communication Officer",
+    socialMedia: {
+      linkedin: "",
+      facebook: "",
+      twitter: "",
+    },
+  },
+  {
+    id: 5,
+    img: productDesigner,
+    teamName: "Hamzat Roheemat Taiwo",
+    post: "ProductDesigner",
     socialMedia: {
       linkedin: "",
       facebook: "",

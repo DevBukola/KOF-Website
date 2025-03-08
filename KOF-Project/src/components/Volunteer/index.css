@@ -14,7 +14,7 @@
   transform: translateX(-50%);
   max-height: 80vh;
   overflow-y: auto;
-  z-index: 999;
+  z-index: 9999;
 }
 
 .volunteer-text {

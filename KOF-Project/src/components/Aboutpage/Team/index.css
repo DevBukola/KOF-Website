@@ -16,11 +16,24 @@
   margin: 0;
 }
 .team p {
-    text-align: center;
+  text-align: center;
 }
 .team-details {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
+  animation: scrollAnimation 20s linear infinite;
+}
+@keyframes scrollAnimation {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.team-details:hover {
+  animation-play-state: paused;
 }
 .team-details h3 {
   margin: 0;
@@ -50,11 +63,16 @@
 .detail img {
   width: 296px;
   height: 320px;
-  border-radius: 20px;
+  border-radius: 20%;
+  object-fit: cover;
 }
 .scroll-container {
-  overflow-x: auto;
-  overflow-y: hidden;
+  /* overflow-x: auto;
+  overflow-y: hidden; */
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  width: 100%;
 }
 
 .scroll-container::-webkit-scrollbar {
@@ -92,8 +110,8 @@
     gap: 6px;
   }
   .detail img {
-    width: 60vw;
-    height: auto;
+    width: 70vw;
+    height: 220px;
   }
   .team-details h3 {
     font-size: 14px;

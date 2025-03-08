@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import "./index.css";
 import Donation from "../../Donation";
 import Volunteer from "../../Volunteer";
+import { motion } from "framer-motion";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Empowerment = () => {
   const [showOptions, setShowOptions] = useState(false);
@@ -30,7 +33,12 @@ const Empowerment = () => {
   };
   return (
     <div className="empower-container">
-      <div className="empower">
+      <motion.div
+        className="empower"
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, ease: "easeOut" }}
+      >
         <h1>Empowering Individuals, Transforming Communities.</h1>
         <p>
           We are creating a world where every person, regardless of background
@@ -39,9 +47,9 @@ const Empowerment = () => {
         <button onClick={handleJoinButtonClick}>
           Join us in transforming lives
         </button>
-      </div>
+      </motion.div>
       {showOptions && (
-        <div className="modal-overlay" onClick={()=> setShowOptions(false)}>
+        <div className="modal-overlay" onClick={() => setShowOptions(false)}>
           <div className="options">
             <button onClick={handleDonateClick}>Do you want to donate?</button>
             <p>Or</p>
@@ -53,7 +61,7 @@ const Empowerment = () => {
       )}
       {donateSelected && <Donation onClose={closeModal} />}
       {volunteerSelected && <Volunteer onClose={closeModal} />}
-      <div className="empower-img">
+      <div data-aos="zoom-in" className="empower-img">
         <img src="/KOF-img1.png" alt="Empowerment" />
       </div>
     </div>

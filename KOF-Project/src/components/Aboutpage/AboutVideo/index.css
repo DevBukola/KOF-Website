@@ -1,65 +1,119 @@
-/* #video-section-wrapper {
-  margin-top: 10px;
-} */
 .video-section {
   padding: 0 100px;
   position: relative;
   z-index: 9999;
   top: 90px;
-}
-.mission-wrapper {
-  /* position: absolute; */
   display: flex;
+  justify-content: center;
+}
+
+.video-section img {
+  width: 100%;
+  max-width: 800px;
+}
+
+.mission-wrapper {
+  display: flex;
+  flex-wrap: wrap;
   gap: 80px;
   align-items: center;
   justify-content: center;
   color: #1d2130;
   background: #bac7de;
-  padding: 160px;
+  padding: 100px 50px;
 }
+
 .mission {
+  flex: 1;
+  min-width: 300px;
+  max-width: 500px;
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
+
 .mission h5 {
   margin: 0;
   font-size: 16px;
   font-weight: 700;
 }
+
 .mission h3 {
   margin: 0;
   font-size: 28px;
   font-weight: 700;
   line-height: 42px;
 }
+
 .mission p {
   font-size: 16px;
   font-weight: 400;
   line-height: 25.6px;
 }
 
+.impact {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+  gap: 18px;
+  padding: 10px 20%;
+  text-align: center;
+}
+
+.impact h5 {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.impact p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 400;
+}
+
+@media (max-width: 1024px) {
+  .mission-wrapper {
+    gap: 40px;
+    padding: 80px 30px;
+  }
+  .impact {
+    padding: 10px 15%;
+  }
+}
+
 @media (max-width: 768px) {
   .video-section {
     padding: 20px;
-    width: 100%;
-  }
-  .video-section img {
-    width: 100%;
+    top: 50px;
   }
   .mission-wrapper {
-    padding: 120px 10px 20px 10px;
-    gap: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    gap: 30px;
+    padding: 60px 20px;
   }
-  .mission h5 {
+  .impact {
+    padding: 10px 10%;
+  }
+  .impact h5 {
     font-size: 14px;
   }
+  .impact p {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 480px) {
   .mission h3 {
-    font-size: 16px;
-    line-height: 25px;
+    font-size: 18px;
+    line-height: 28px;
   }
   .mission p {
-    font-size: 12px;
+    font-size: 14px;
     line-height: 22px;
+  }
+  .impact {
+    padding: 10px;
   }
 }

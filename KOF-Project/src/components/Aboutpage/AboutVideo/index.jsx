@@ -37,6 +37,16 @@ function AboutVideo() {
           </p>
         </div>
       </div>
+      <div className="impact">
+        <h5>OUR IMPACT</h5>
+        <p>
+          Since our inception, the Kehinde Ogundele Foundation has impacted
+          numerous lives through scholarship programs, advocacy campaigns,
+          community outreach, and empowerment projects. We are proud to
+          contribute to a more educated, inclusive, and civically engaged
+          society.
+        </p>
+      </div>
     </div>
   );
 }

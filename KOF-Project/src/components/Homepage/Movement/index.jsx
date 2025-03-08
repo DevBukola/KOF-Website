@@ -1,7 +1,9 @@
 import "./index.css";
 import Volunteer from "../../Volunteer";
 import Donation from "../../Donation";
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Movement = () => {
   const [showOptions, setShowOptions] = useState(false);
@@ -29,7 +31,7 @@ const Movement = () => {
     setVolunteerSelected(false);
   };
   return (
-    <div className="movement-wrapper">
+    <div data-aos="flip-right" className="movement-wrapper">
       <div className="movement-image">
         <img src="/frame4.png" alt="movement" />
           </div>
