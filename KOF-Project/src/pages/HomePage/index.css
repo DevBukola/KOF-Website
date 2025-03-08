@@ -38,7 +38,7 @@
 .difference-bar:nth-child(3) {
   background-color: #dd241f;
 }
-
+/* 
 .scroll-container {
   overflow-x: auto;
   overflow-y: hidden;
@@ -55,18 +55,53 @@
 }
 
 .scroll-container::-webkit-scrollbar-thumb {
-  /* background-color: #9394c2; */
-  background-color: yellow;
   border-radius: 4px;
 }
 
 .scroll-container::-webkit-scrollbar-thumb:hover {
   background-color: #2b1770;
+} */
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  flex-wrap: nowrap;
 }
 
-.cards {
+.carousel-wrapper {
   display: flex;
-  gap: 19px;
+  gap: 30px;
+  overflow-x: auto;
+  width: 80%;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+
+.carousel-wrapper::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll-button {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+  border: none;
+  padding: 10px;
+  z-index: 10;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.scroll-button.left {
+  position: absolute;
+  left: 0;
+}
+
+.scroll-button.right {
+  position: absolute;
+  right: 0;
 }
 
 .project-wrapper {
@@ -83,7 +118,7 @@
 
 .project-card {
   display: flex;
-  justify-content: space-between;
+  gap: 20px;
 }
 
 .project h3 {
@@ -147,5 +182,8 @@
   .discover {
     font-size: 12px;
     padding: 10px 20px;
+  }
+  .carousel-wrapper {
+    gap: 10px;
   }
 }

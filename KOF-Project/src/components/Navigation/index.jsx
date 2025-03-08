@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./index.css";
 import { Link, useLocation } from "react-router-dom";
+import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 import Donation from "../Donation";
 
 function Navigation() {
@@ -20,6 +21,8 @@ function Navigation() {
     setIsHamburgerMenuOpen((prev) => !prev);
   };
 
+  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
+
   return (
     <div className="navigation-container">
       <div className="logo-wrapper">
@@ -38,8 +41,18 @@ function Navigation() {
           <li className={location.pathname === "/about-us" ? "active" : ""}>
             <Link to="/about-us">About Us</Link>
           </li>
-          <li className={location.pathname === "/program" ? "active" : ""}>
-            <Link to="/program">Our Progam</Link>
+
+          <li
+            className={location.pathname.startsWith("/program") ? "active" : ""}
+          >
+            <Link to="/program">Our Program</Link>
+            {/* <div
+              className="dropdown-container"
+              onClick={() => setIsDropdownOpen((prev) => !prev)}
+            >
+              <Link to="/program">Our Program</Link>
+              {isDropdownOpen ? <FaChevronUp /> : <FaChevronDown />}
+            </div> */}
           </li>
           <li className={location.pathname === "/contact" ? "active" : ""}>
             <Link to="/contact">Contact Us</Link>

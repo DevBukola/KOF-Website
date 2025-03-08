@@ -4,10 +4,24 @@
   font-weight: 500;
 }
 
+.events-wrapper a {
+  text-decoration: none;
+}
+
 .events {
   display: flex;
   gap: 20px;
+  overflow-x: auto;
+  white-space: nowrap;
+  scroll-behavior: smooth;
+  padding-bottom: 10px;
+  scrollbar-width: 2px;
 }
+
+.events::-webkit-scrollbar {
+  display: none;
+}
+
 
 .operation {
   display: flex;
@@ -47,7 +61,7 @@
 }
 
 .operation-text p {
-  font-size: 28px;
+  font-size: 20px;
   font-weight: 700;
   opacity: 85%;
 }
@@ -85,7 +99,11 @@
   }
 
   .events {
-   flex-direction: column;
+    flex-direction: column;
+    overflow-x: unset;
+    white-space: unset;
+    scroll-behavior: unset;
+    scrollbar-width: none;
   }
   .operation {
     width: 100%;
