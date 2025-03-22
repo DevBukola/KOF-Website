@@ -8,8 +8,11 @@
   background-position: center;
   background-repeat: no-repeat;
   width: 100%;
+  max-width: 100vw;
   padding: 100px;
   border-radius: 10px;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 .cta-wrapper {
   display: flex;
@@ -27,8 +30,8 @@
   text-align: center;
 }
 .cta {
-    display: flex;
-    gap: 10px;
+  display: flex;
+  gap: 10px;
 }
 .volunteer {
   background: #6c6d89;
@@ -52,17 +55,24 @@
 }
 
 @media (max-width: 768px) {
-    #background-container {
-        padding: 10px;
-        margin-top: 20px;
-    }
-    .cta-wrapper .contribute {
-        width: 80vw;
-        font-size: 14px;
-        line-height: 17.6px;
-      }
-      .donate, .volunteer {
-        padding: 6px 30px;
-        width: fit-content;
-      }
+  #background-container {
+    padding: unset;
+    margin-top: 10px;
+  }
+  .background {
+    border-radius: 0;
+  }
+  .cta-wrapper .contribute {
+    width: 100vw;
+    font-size: 14px;
+    line-height: 17.6px;
+  }
+  .cta button {
+    font-size: 12px;
+  }
+  .donate,
+  .volunteer {
+    padding: 6px 30px;
+    width: fit-content;
+  }
 }

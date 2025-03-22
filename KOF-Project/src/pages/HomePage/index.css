@@ -75,7 +75,7 @@
   display: flex;
   gap: 30px;
   overflow-x: auto;
-  width: 80%;
+  width: 100%;
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
@@ -119,6 +119,9 @@
 .project-card {
   display: flex;
   gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
 }
 
 .project h3 {
@@ -183,7 +186,22 @@
     font-size: 12px;
     padding: 10px 20px;
   }
+
+  .carousel-container {
+    display: flex;
+    align-items: unset;
+    position: unset;
+    width: 100%;
+    overflow: unset;
+    flex-wrap: unset;
+  }
+
   .carousel-wrapper {
     gap: 10px;
+    flex-direction: column;
+    width: 100%;
+  }
+  .scroll-button {
+    display: none;
   }
 }

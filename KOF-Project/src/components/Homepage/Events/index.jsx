@@ -10,7 +10,7 @@ function Events() {
     <div className="events-wrapper">
       <h1>Our Past Events</h1>
       <div className="events">
-        <Link to="/program/touch-to-learn">
+        <Link to="">
           <div data-aos="fade-up" className="operation">
             <div className="operation-date">
               <div className="dates">
@@ -35,7 +35,7 @@ function Events() {
             </div>
           </div>
         </Link>
-        <Link to="/program/menstrual-hygiene-day">
+        <Link to="">
           <div data-aos="zoom-in" className="operation">
             <div className="operation-date">
               <div className="dates">
@@ -57,7 +57,7 @@ function Events() {
             </div>
           </div>
         </Link>
-        <Link to="/program/Community-Engagement-On-LGA-Reforms-and-Advocacy">
+        <Link to="">
           <div data-aos="zoom-in" className="operation">
             <div className="operation-date">
               <div className="dates">
