@@ -62,7 +62,9 @@ function TouchToLearn() {
           loading="lazy"
         />
       </div>
-      <Contribution />
+      <div>
+        <Contribution />
+      </div>
     </div>
   );
 }

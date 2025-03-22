@@ -13,7 +13,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   padding: 10px;
   min-height: 250px;
-  width: 330px;
+  width: 30vw;
   flex-grow: 1;
 }
 
@@ -43,6 +43,6 @@
   }
   .responsibility {
     min-height: 200px;
-    width: 65vw;
+    width: 100%;
   }
 }
